@@ -1,0 +1,12 @@
+Statistiche dei Cluster:
+        upvote_ratio        author_impact        post_hour        title_length         upvotes         num_comments        count
+                mean median          mean median      mean median         mean median     mean  median         mean median      
+cluster                                                                                                                         
+0               0.98   0.99          8.92   8.99     16.64   17.0        45.61   37.0   637.63   374.0        47.36   28.0  4193
+1               0.92   0.94          9.81   9.90     11.70   13.0        73.94   56.0  4623.87  2205.0       341.99  196.0   807
+
+Distribuzione Tipi di Contenuto per Cluster:
+content_type  image  other  text  video
+cluster                                
+0              0.59   0.23  0.05   0.14
+1              0.48   0.22  0.13   0.16

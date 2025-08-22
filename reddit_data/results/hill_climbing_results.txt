@@ -1,0 +1,20 @@
+=== Struttura appresa ===
+upvotes -> engagement_score
+upvotes -> is_viral
+engagement_score -> is_viral
+engagement_score -> num_comments
+is_viral -> upvote_ratio
+num_comments -> title_length
+num_comments -> upvote_ratio
+num_comments -> is_viral
+title_length -> title_complexity
+title_length -> is_viral
+author_impact -> is_viral
+author_impact -> upvotes
+
+=== Risultati del modello ===
+- Accuracy: 0.9560
+- Precision: 0.9560
+- Recall: 0.8908
+- F1-score: 0.9223
+- Binary Cross-Entropy: 0.2752554342090601

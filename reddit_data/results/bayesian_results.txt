@@ -1,0 +1,40 @@
+
+=== Risultati per il modello Full ===
+- Accuracy: 0.9810
+- Precision: 0.9757
+- Recall: 0.9590
+- F1-score: 0.9673
+- Binary Cross-Entropy: 0.0851
+
+
+=== Risultati per il modello Simple ===
+- Accuracy: 0.9810
+- Precision: 0.9757
+- Recall: 0.9590
+- F1-score: 0.9673
+- Binary Cross-Entropy: 0.0851
+
+
+=== Risultati per il modello Full ===
+- Accuracy: 0.9810
+- Precision: 0.9757
+- Recall: 0.9590
+- F1-score: 0.9673
+- Binary Cross-Entropy: 0.0851
+
+
+=== Risultati per il modello Full ===
+- Accuracy: 0.9810
+- Precision: 0.9757
+- Recall: 0.9590
+- F1-score: 0.9673
+- Binary Cross-Entropy: 0.0851
+
+
+=== Risultati per il modello Simple ===
+- Accuracy: 0.9810
+- Precision: 0.9757
+- Recall: 0.9590
+- F1-score: 0.9673
+- Binary Cross-Entropy: 0.0851
+
