@@ -1,100 +1,58 @@
 === RandomForest (SMOTE) ===
-Migliori parametri: {'max_depth': 8, 'max_features': 'sqrt', 'min_samples_split': 10, 'n_estimators': 100}
-AUC-ROC TRAIN: 0.9992
-AUC-ROC TEST: 0.9946
-Accuracy TRAIN: 0.9855
-Accuracy TEST: 0.9790
-Classification Report TEST:
+Migliori parametri: {'max_depth': 8, 'max_features': 0.5, 'min_samples_split': 10, 'n_estimators': 150}
+Nested CV Accuracy: 0.9906 (+/- 0.0038)
+
+Accuracy (Test Set): 0.9930
+AUC-ROC (Test Set): 0.9998
+Classification Report (Test Set):
               precision    recall  f1-score   support
 
-           0     0.9971    0.9731    0.9849       706
-           1     0.9387    0.9932    0.9652       293
+           0     0.9986    0.9915    0.9950       706
+           1     0.9799    0.9966    0.9882       293
 
-    accuracy                         0.9790       999
-   macro avg     0.9679    0.9831    0.9751       999
-weighted avg     0.9800    0.9790    0.9791       999
-
-Learning curve errori (1-accuracy):
-Frazione_trainset	Errore_train	Errore_test
-0.10	0.0066	0.0410
-0.20	0.0126	0.0290
-0.30	0.0099	0.0290
-0.40	0.0129	0.0270
-0.50	0.0092	0.0240
-0.60	0.0086	0.0230
-0.70	0.0086	0.0240
-0.80	0.0108	0.0230
-0.90	0.0129	0.0220
-1.00	0.0126	0.0210
-
+    accuracy                         0.9930       999
+   macro avg     0.9892    0.9940    0.9916       999
+weighted avg     0.9931    0.9930    0.9930       999
 
 === RandomForest (NoSMOTE) ===
-Migliori parametri: {'max_depth': 8, 'max_features': 0.5, 'min_samples_split': 10, 'n_estimators': 150}
-AUC-ROC TRAIN: 0.9993
-AUC-ROC TEST: 0.9953
-Accuracy TRAIN: 0.9817
-Accuracy TEST: 0.9780
-Classification Report TEST:
+Migliori parametri: {'max_depth': 8, 'max_features': 0.5, 'min_samples_split': 10, 'n_estimators': 100}
+Nested CV Accuracy: 0.9945 (+/- 0.0020)
+
+Accuracy (Test Set): 0.9940
+AUC-ROC (Test Set): 0.9996
+Classification Report (Test Set):
               precision    recall  f1-score   support
 
-           0     0.9985    0.9703    0.9842       706
-           1     0.9329    0.9966    0.9637       293
+           0     0.9986    0.9929    0.9957       706
+           1     0.9832    0.9966    0.9898       293
 
-    accuracy                         0.9780       999
-   macro avg     0.9657    0.9834    0.9739       999
-weighted avg     0.9793    0.9780    0.9782       999
-
-Learning curve errori (1-accuracy):
-Frazione_trainset	Errore_train	Errore_test
-0.10	0.0150	0.0340
-0.20	0.0150	0.0220
-0.30	0.0167	0.0260
-0.40	0.0181	0.0240
-0.50	0.0165	0.0240
-0.60	0.0163	0.0230
-0.70	0.0207	0.0230
-0.80	0.0175	0.0230
-0.90	0.0192	0.0250
-1.00	0.0183	0.0220
-
+    accuracy                         0.9940       999
+   macro avg     0.9909    0.9948    0.9928       999
+weighted avg     0.9941    0.9940    0.9940       999
 
 === SVC (SMOTE) ===
 Migliori parametri: {'C': 10, 'gamma': 0.01}
-AUC-ROC TRAIN: 0.9999
-AUC-ROC TEST: 0.8555
-Accuracy TRAIN: 0.9888
-Accuracy TEST: 0.8148
-Classification Report TEST:
+Nested CV Accuracy: 0.8438 (+/- 0.0065)
+
+Accuracy (Test Set): 0.7858
+AUC-ROC (Test Set): 0.8499
+Classification Report (Test Set):
               precision    recall  f1-score   support
 
-           0     0.8989    0.8314    0.8639       706
-           1     0.6561    0.7747    0.7105       293
+           0     0.9256    0.7578    0.8333       706
+           1     0.5938    0.8532    0.7003       293
 
-    accuracy                         0.8148       999
-   macro avg     0.7775    0.8031    0.7872       999
-weighted avg     0.8277    0.8148    0.8189       999
-
-Learning curve errori (1-accuracy):
-Frazione_trainset	Errore_train	Errore_test
-0.10	0.0000	0.2923
-0.20	0.0000	0.2943
-0.30	0.0000	0.2973
-0.40	0.0000	0.2803
-0.50	0.0000	0.2903
-0.60	0.0003	0.2743
-0.70	0.0000	0.2723
-0.80	0.0000	0.2633
-0.90	0.0002	0.2603
-1.00	0.0002	0.1852
-
+    accuracy                         0.7858       999
+   macro avg     0.7597    0.8055    0.7668       999
+weighted avg     0.8283    0.7858    0.7943       999
 
 === SVC (NoSMOTE) ===
 Migliori parametri: {'C': 10, 'gamma': 'scale'}
-AUC-ROC TRAIN: 0.8718
-AUC-ROC TEST: 0.8684
-Accuracy TRAIN: 0.8063
-Accuracy TEST: 0.8058
-Classification Report TEST:
+Nested CV Accuracy: 0.8071 (+/- 0.0077)
+
+Accuracy (Test Set): 0.8058
+AUC-ROC (Test Set): 0.8684
+Classification Report (Test Set):
               precision    recall  f1-score   support
 
            0     0.8596    0.8669    0.8632       706
@@ -104,77 +62,35 @@ Classification Report TEST:
    macro avg     0.7660    0.7628    0.7644       999
 weighted avg     0.8047    0.8058    0.8052       999
 
-Learning curve errori (1-accuracy):
-Frazione_trainset	Errore_train	Errore_test
-0.10	0.1930	0.2062
-0.20	0.2240	0.2062
-0.30	0.1920	0.1882
-0.40	0.1884	0.1942
-0.50	0.1992	0.2022
-0.60	0.1865	0.1952
-0.70	0.1848	0.1932
-0.80	0.1921	0.1972
-0.90	0.1930	0.1942
-1.00	0.1937	0.1942
-
-
 === AdaBoost (SMOTE) ===
 Migliori parametri: {'estimator': DecisionTreeClassifier(max_depth=3, random_state=42), 'learning_rate': 0.5, 'n_estimators': 100}
-AUC-ROC TRAIN: 0.9996
-AUC-ROC TEST: 0.9958
-Accuracy TRAIN: 0.9876
-Accuracy TEST: 0.9790
-Classification Report TEST:
+Nested CV Accuracy: 0.9954 (+/- 0.0015)
+
+Accuracy (Test Set): 0.9950
+AUC-ROC (Test Set): 0.9999
+Classification Report (Test Set):
               precision    recall  f1-score   support
 
-           0     0.9971    0.9731    0.9849       706
-           1     0.9387    0.9932    0.9652       293
+           0     1.0000    0.9929    0.9964       706
+           1     0.9832    1.0000    0.9915       293
 
-    accuracy                         0.9790       999
-   macro avg     0.9679    0.9831    0.9751       999
-weighted avg     0.9800    0.9790    0.9791       999
-
-Learning curve errori (1-accuracy):
-Frazione_trainset	Errore_train	Errore_test
-0.10	0.0000	0.0390
-0.20	0.0000	0.0270
-0.30	0.0000	0.0220
-0.40	0.0018	0.0270
-0.50	0.0035	0.0210
-0.60	0.0071	0.0230
-0.70	0.0079	0.0200
-0.80	0.0086	0.0220
-0.90	0.0121	0.0200
-1.00	0.0117	0.0210
-
+    accuracy                         0.9950       999
+   macro avg     0.9916    0.9965    0.9940       999
+weighted avg     0.9951    0.9950    0.9950       999
 
 === AdaBoost (NoSMOTE) ===
-Migliori parametri: {'estimator': DecisionTreeClassifier(max_depth=3, random_state=42), 'learning_rate': 0.1, 'n_estimators': 100}
-AUC-ROC TRAIN: 0.9974
-AUC-ROC TEST: 0.9967
-Accuracy TRAIN: 0.9767
-Accuracy TEST: 0.9790
-Classification Report TEST:
+Migliori parametri: {'estimator': DecisionTreeClassifier(max_depth=2, random_state=42), 'learning_rate': 0.5, 'n_estimators': 100}
+Nested CV Accuracy: 0.9992 (+/- 0.0010)
+
+Accuracy (Test Set): 0.9990
+AUC-ROC (Test Set): 1.0000
+Classification Report (Test Set):
               precision    recall  f1-score   support
 
-           0     0.9957    0.9745    0.9850       706
-           1     0.9416    0.9898    0.9651       293
+           0     1.0000    0.9986    0.9993       706
+           1     0.9966    1.0000    0.9983       293
 
-    accuracy                         0.9790       999
-   macro avg     0.9686    0.9821    0.9750       999
-weighted avg     0.9798    0.9790    0.9791       999
-
-Learning curve errori (1-accuracy):
-Frazione_trainset	Errore_train	Errore_test
-0.10	0.0000	0.0300
-0.20	0.0138	0.0310
-0.30	0.0134	0.0210
-0.40	0.0125	0.0280
-0.50	0.0175	0.0250
-0.60	0.0184	0.0230
-0.70	0.0218	0.0220
-0.80	0.0210	0.0230
-0.90	0.0220	0.0210
-1.00	0.0233	0.0210
-
+    accuracy                         0.9990       999
+   macro avg     0.9983    0.9993    0.9988       999
+weighted avg     0.9990    0.9990    0.9990       999
 
