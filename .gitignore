@@ -1,0 +1,19 @@
+# Ambienti virtuali 
+venv/
+env/
+.venv/
+myenv/
+test_env/
+virtualenv/
+.env/
+.venv*/
+*env/
+env*/
+venv*/
+ENV/
+env.bak/
+venv.bak/
+
+# File specifici degli ambienti virtuali
+pyvenv.cfg
+pip-selfcheck.json
