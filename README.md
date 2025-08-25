@@ -34,7 +34,7 @@ Dopo aver letto la documentazione quindi si dispone del **username** e **passwor
 
 1. Aprire il file **reddit_scanner** e inserire i dati in *client_id* e *client_secret* (riga 10-11)
 
-2. Eseguire i seguenti comando da console:
+2. Eseguire i seguenti comandi da console:
 ```bash
 # Scarica top 5000 posts su reddit
 python reddit_scanner.py
