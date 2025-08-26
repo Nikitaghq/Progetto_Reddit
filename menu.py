@@ -1,3 +1,4 @@
+# Menu del programma
 def mostra_menu():
     print("\n" + "="*50)
     print("MENU PRINCIPALE - PROGETTO REDDIT")
@@ -9,6 +10,7 @@ def mostra_menu():
     print("5) Esci")
     print("="*50)
 
+# Verifica dei dati necessari per il funzionamento
 def verifica_dati():
     """Controlla la presenza dei file necessari"""
     from pathlib import Path

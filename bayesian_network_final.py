@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# Comando per disattivare warning
+
 logging.getLogger("pgmpy").setLevel(logging.WARNING)
 
 
@@ -67,7 +67,7 @@ def preprocess_data(df):
 
 
 def save_graph_as_image(dag, output_path):
-    # Salva il grafo orientato come immagine con layout circolare
+    # Salva il grafo orientato come immagine
     G = nx.DiGraph()
     G.add_nodes_from(sorted(dag.nodes()))
     G.add_edges_from(dag.edges())

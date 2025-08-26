@@ -47,6 +47,7 @@ def run_unsupervised():
     # Analisi risultati del cluster
     analyze_clusters(df, features, kmeans, X_scaled)  
 
+# Funzione per il k ottimale
 def find_best_k(X_scaled, max_k=8):
     best_score = -1
     best_k = 2

@@ -7,7 +7,7 @@ from bayesian_network import run_bayesian_network
 from bayesian_network_final import main as run_hill_climbing
 
 
-
+# Funzione main
 def main():
    while True:
     mostra_menu()

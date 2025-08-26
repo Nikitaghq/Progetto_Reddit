@@ -20,8 +20,7 @@ git clone https://github.com/Nikitaghq/Progetto_Reddit.git
 pip install -r requirements.txt
 ```
 ## 📦 Installazione
-Non avviare file **reddit_scanner.py** senza aver letto la documentazione.
-
+Non avviare file **reddit_scanner.py** senza aver letto la [documentazione](https://www.reddit.com/dev/api/).
 Il progetto dispone già dei dati necessari per l'avvio del programma e sono quelli discussi nella documentazione. 
 
 Per testare il progetto con i dati già scaricati:

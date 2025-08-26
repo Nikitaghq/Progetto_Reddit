@@ -12,10 +12,10 @@ reddit = praw.Reddit(
     user_agent="RedditDataCollector/1.0"
 )
 
-# === Parametri ===
-OUTPUT_DIR = "reddit_data"
+OUTPUT_DIR = "reddit_data" # Directory di output
 LIMIT = 5000  # Numero di post da raccogliere
 
+# Funzione per il download dei posts
 def scrape_reddit():
     posts = []
     

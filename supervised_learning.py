@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import random
 
-RANDOM_STATE = 42
+RANDOM_STATE = 42 # Random Seed per riproddurre gli stessi risultati ad ogni avvio
 np.random.seed(RANDOM_STATE)
 random.seed(RANDOM_STATE)
 
@@ -71,9 +71,7 @@ def run_supervised(
     X = df[feature_cols]
     y = df['is_viral']
 
-    # Usa tutte le feature senza selezione
     X_selected = X
-
     X_train, X_test, y_train, y_test = train_test_split(
         X_selected, y, test_size=0.2, stratify=y, random_state=RANDOM_STATE
     )
@@ -166,7 +164,7 @@ def run_supervised(
             best_model = grid_search.best_estimator_
             best_params = grid_search.best_params_
 
-            # Aggiungi al report solo i parametri e la Nested CV Accuracy
+            # Aggiungi al report
             report_lines.append(f"=== {model_name} ({smote_mode}) ===\n")
             report_lines.append(f"Migliori parametri: {best_params}\n")
             report_lines.append(f"Nested CV Accuracy: {mean_nested_score:.4f} (+/- {std_nested_score:.4f})\n")
@@ -234,7 +232,7 @@ def run_supervised(
     with open(output_report, 'w') as f:
         f.writelines(report_lines)
 
-    # Plot ROC curve combinata
+    # Plot ROC curve
     plt.figure(figsize=(10, 8))
     for data in roc_data:
         plt.plot(data['fpr'], data['tpr'], label=f"{data['label']} (AUC = {data['auc']:.4f})")
